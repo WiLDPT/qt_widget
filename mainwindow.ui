@@ -50,6 +50,19 @@
      <height>20</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuSimple_App">
+    <property name="title">
+     <string>Simple App</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="separator"/>
+   </widget>
+   <addaction name="menuSimple_App"/>
+   <addaction name="menuSettings"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
