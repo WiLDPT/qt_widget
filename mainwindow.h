@@ -18,7 +18,7 @@ public:
 private slots:
     void on_pushButton_clicked();
 
-    void on_niceButton_clicked();
+    void on_action_Set_Port_triggered();
 
 private:
     Ui::MainWindow *ui;
