@@ -52,19 +52,25 @@
    </property>
    <widget class="QMenu" name="menuSimple_App">
     <property name="title">
-     <string>Simple App</string>
+     <string>&amp;Simple App</string>
     </property>
    </widget>
    <widget class="QMenu" name="menuSettings">
     <property name="title">
-     <string>Settings</string>
+     <string>&amp;Settings</string>
     </property>
     <addaction name="separator"/>
+    <addaction name="action_Set_Port"/>
    </widget>
    <addaction name="menuSimple_App"/>
    <addaction name="menuSettings"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_Set_Port">
+   <property name="text">
+    <string>&amp;Set Port</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
