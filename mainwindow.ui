@@ -13,17 +13,14 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <property name="styleSheet">
-   <string notr="true">background-color: rgb(64, 65, 66);</string>
-  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>220</y>
-      <width>371</width>
-      <height>61</height>
+      <x>11</x>
+      <y>82</y>
+      <width>781</width>
+      <height>471</height>
      </rect>
     </property>
     <property name="maximumSize">
@@ -62,7 +59,7 @@ border-color: rgb(255, 255, 255);</string>
      <string/>
     </property>
     <property name="textFormat">
-     <enum>Qt::PlainText</enum>
+     <enum>Qt::AutoText</enum>
     </property>
     <property name="alignment">
      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -71,10 +68,10 @@ border-color: rgb(255, 255, 255);</string>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>180</y>
-      <width>80</width>
-      <height>31</height>
+      <x>690</x>
+      <y>10</y>
+      <width>101</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="maximumSize">
@@ -87,16 +84,22 @@ border-color: rgb(255, 255, 255);</string>
      <bool>false</bool>
     </property>
     <property name="text">
-     <string>CLICK HERE</string>
+     <string>Send</string>
+    </property>
+    <property name="autoDefault">
+     <bool>true</bool>
+    </property>
+    <property name="default">
+     <bool>true</bool>
     </property>
    </widget>
    <widget class="QTextEdit" name="input_text">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>180</y>
-      <width>281</width>
-      <height>31</height>
+      <x>10</x>
+      <y>10</y>
+      <width>661</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -117,15 +120,16 @@ border-color: rgb(255, 255, 255);</string>
    </property>
    <widget class="QMenu" name="menuSimple_App">
     <property name="title">
-     <string>&amp;Simple App</string>
+     <string>&amp;Home</string>
     </property>
+    <addaction name="action_Save_Image"/>
    </widget>
    <widget class="QMenu" name="menuSettings">
     <property name="title">
-     <string>&amp;Settings</string>
+     <string>&amp;Connect</string>
     </property>
-    <addaction name="separator"/>
     <addaction name="action_Set_Port"/>
+    <addaction name="action_Default_Port"/>
    </widget>
    <addaction name="menuSimple_App"/>
    <addaction name="menuSettings"/>
@@ -136,10 +140,40 @@ border-color: rgb(255, 255, 255);</string>
     <string>&amp;Set Port</string>
    </property>
    <property name="toolTip">
-    <string>&amp;Set Port</string>
+    <string>Set Port</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_Save_Image">
+   <property name="text">
+    <string>&amp;Save Image</string>
+   </property>
+   <property name="toolTip">
+    <string>Save Image</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_Default_Port">
+   <property name="text">
+    <string>&amp;Default Port</string>
+   </property>
+   <property name="toolTip">
+    <string>Default Port</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="action_enter_key">
+   <property name="text">
+    <string>enter_key</string>
+   </property>
+   <property name="shortcut">
+    <string>Return</string>
    </property>
   </action>
  </widget>
