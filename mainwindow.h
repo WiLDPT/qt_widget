@@ -22,6 +22,10 @@ private slots:
 
     void on_input_text_textChanged();
 
+    void on_action_Default_Port_triggered();
+
+    void on_action_enter_key_triggered();
+
 private:
     Ui::MainWindow *ui;
 };
