@@ -20,6 +20,8 @@ private slots:
 
     void on_action_Set_Port_triggered();
 
+    void on_input_text_textChanged();
+
 private:
     Ui::MainWindow *ui;
 };
