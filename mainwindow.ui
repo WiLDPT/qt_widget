@@ -13,14 +13,17 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(64, 65, 66);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>200</x>
-      <y>230</y>
-      <width>331</width>
-      <height>51</height>
+      <x>20</x>
+      <y>220</y>
+      <width>371</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="maximumSize">
@@ -41,6 +44,20 @@
       <height>10</height>
      </size>
     </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(64, 65, 66);
+border-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
     <property name="text">
      <string/>
     </property>
@@ -48,17 +65,26 @@
      <enum>Qt::PlainText</enum>
     </property>
     <property name="alignment">
-     <set>Qt::AlignCenter</set>
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
       <x>310</x>
-      <y>190</y>
+      <y>180</y>
       <width>80</width>
-      <height>21</height>
+      <height>31</height>
      </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777215</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
     </property>
     <property name="text">
      <string>CLICK HERE</string>
@@ -69,9 +95,14 @@
      <rect>
       <x>20</x>
       <y>180</y>
-      <width>104</width>
-      <height>70</height>
+      <width>281</width>
+      <height>31</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(64, 65, 66);
+border-color: rgb(255, 255, 255);</string>
     </property>
    </widget>
   </widget>
