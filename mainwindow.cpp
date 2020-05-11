@@ -10,6 +10,7 @@ MainWindow::MainWindow(QWidget *parent):
 {
     ui->setupUi(this);
     ui->pushButton->setEnabled(false);
+    //ui->pushButton->setAutoDefault(true);
 }
 
 MainWindow::~MainWindow()
@@ -19,8 +20,8 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
-    ui->label->setText(ui->input_text->toPlainText());
-    //ui->label->;
+    ui->label->setText(ui->label->text() + ui->input_text->toPlainText() + "\n");
+    ui->input_text->clear();
 }
 
 void MainWindow::on_action_Set_Port_triggered()
@@ -39,4 +40,9 @@ void MainWindow::on_input_text_textChanged()
     else{
         ui->pushButton->setEnabled(true);
     }
+}
+
+void MainWindow::on_action_Default_Port_triggered()
+{
+
 }
