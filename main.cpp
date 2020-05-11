@@ -7,6 +7,7 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     MainWindow w;
+    //w.setStyleSheet("background-color : black; color : white");
     w.show();
 
     //QLabel *label = new QLabel("Gametime!");
