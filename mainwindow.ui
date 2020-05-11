@@ -17,14 +17,38 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>330</x>
+      <x>200</x>
       <y>230</y>
-      <width>47</width>
-      <height>13</height>
+      <width>331</width>
+      <height>51</height>
      </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>16777211</width>
+      <height>16777215</height>
+     </size>
+    </property>
+    <property name="sizeIncrement">
+     <size>
+      <width>5</width>
+      <height>1</height>
+     </size>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>300</width>
+      <height>10</height>
+     </size>
     </property>
     <property name="text">
      <string/>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
@@ -78,6 +102,9 @@
   <widget class="QStatusBar" name="statusbar"/>
   <action name="action_Set_Port">
    <property name="text">
+    <string>&amp;Set Port</string>
+   </property>
+   <property name="toolTip">
     <string>&amp;Set Port</string>
    </property>
    <property name="shortcut">
