@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QLabel>
+#include <QTextEdit>
 #include <QMessageBox>
 
 MainWindow::MainWindow(QWidget *parent):
@@ -17,7 +18,8 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked()
 {
-    ui->label->setText("NICE!!");
+    ui->label->setText(ui->input_text->toPlainText());
+    //ui->label->;
 }
 
 void MainWindow::on_action_Set_Port_triggered()
