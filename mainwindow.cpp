@@ -9,6 +9,7 @@ MainWindow::MainWindow(QWidget *parent):
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    ui->pushButton->setEnabled(false);
 }
 
 MainWindow::~MainWindow()
@@ -28,4 +29,14 @@ void MainWindow::on_action_Set_Port_triggered()
     msg.setText("NIIIIIICE!!");
     msg.exec();
 
+}
+
+void MainWindow::on_input_text_textChanged()
+{
+    if(ui->input_text->toPlainText() == NULL){
+        ui->pushButton->setEnabled(false);
+    }
+    else{
+        ui->pushButton->setEnabled(true);
+    }
 }
