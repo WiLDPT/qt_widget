@@ -27,12 +27,10 @@ void MainWindow::on_pushButton_clicked()
 
 void MainWindow::on_action_Set_Port_triggered()
 {
-
-
-//    QMessageBox msg;
-//    msg.setText("NIIIIIICE!!");
-//    msg.exec();
-
+    QMessageBox msg;
+    msg.setWindowTitle("Checking...");
+    msg.setText("NIIIIIICE!!");
+    msg.exec();
 }
 
 void MainWindow::on_input_text_textChanged()
@@ -46,6 +44,11 @@ void MainWindow::on_input_text_textChanged()
 }
 
 void MainWindow::on_action_Default_Port_triggered()
+{
+
+}
+
+void MainWindow::on_action_Save_Image_triggered()
 {
 
 }
