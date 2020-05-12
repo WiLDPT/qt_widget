@@ -26,6 +26,8 @@ private slots:
 
     void on_action_enter_key_triggered();
 
+    void on_action_Save_Image_triggered();
+
 private:
     Ui::MainWindow *ui;
 };
