@@ -7,7 +7,9 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
     MainWindow w;
+    //w.showFullScreen();
     w.show();
+    //w.showMaximized();
 
     //QLabel *label = new QLabel("Gametime!");
     //label->show();
